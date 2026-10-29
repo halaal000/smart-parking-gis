@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Parking HM</title>
+
+<!-- مكتبة الخريطة -->
+
+<link rel="stylesheet"
+
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<style>
+
+:root {
+
+  --navy: #12345a;
+
+  --sky: #45b9e8;
+
+  --green: #16a36a;
+
+  --red: #e34e59;
+
+  --bg: #f4f9fc;
+
+  --white: #ffffff;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  font-family: Tahoma, Arial, sans-serif;
+
+  background: var(--bg);
+
+  color: var(--navy);
+
+}
+
+.container {
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 24px;
+
+}
+
+header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 25px;
+
+}
+
+.logo {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+}
+
+h1 {
+
+  margin: 0;
+
+  font-size: 25px;
+
+}
+
+.subtitle {
+
+  color: #71849a;
+
+  margin-top: 7px;
+
+}
+
+button {
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 16px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-weight: bold;
+
+}
+
+.primary {
+
+  background: var(--navy);
+
+  color: white;
+
+}
+
+.secondary {
+
+  background: #e5f6fd;
+
+  color: var(--navy);
+
+}
+
+.stats {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+
+}
+
+.card {
+
+  background: var(--white);
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  border: 1px solid #e3edf4;
+
+  box-shadow: 0 5px 20px #12345a0b;
+
+}
+
+.card h3 {
+
+  font-size: 14px;
+
+  color: #71849a;
+
+  margin-top: 0;
+
+}
+
+.number {
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  margin: 12px 0;
+
+}
+
+.available-text {
+
+  color: var(--green);
+
+}
+
+.occupied-text {
+
+  color: var(--red);
+
+}
+
+.progress {
+
+  height: 7px;
+
+  background: #e9eff4;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+}
+
+.progress div {
+
+  height: 100%;
+
+  transition: width 0.4s;
+
+}
+
+.panel {
+
+  background: white;
+
+  border-radius: 16px;
+
+  border: 1px solid #e3edf4;
+
+  padding: 18px;
+
+  margin-bottom: 18px;
+
+}
+
+.map-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+
+}
+
+#map {
+
+  width: 100%;
+
+  height: 520px;
+
+  border-radius: 12px;
+
+  background: #e9f1f5;
+
+}
+
+.legend {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  margin-top: 15px;
+
+  color: #71849a;
+
+  font-size: 13px;
+
+}
+
+.dot {
+
+  display: inline-block;
+
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 3px;
+
+  margin-left: 5px;
+
+}
+
+.green-dot {
+
+  background: var(--green);
+
+}
+
+.red-dot {
+
+  background: var(--red);
+
+}
+
+.status-message {
+
+  color: #71849a;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  margin-top: 12px;
+
+}
+
+.spot-icon.available {
+  background: #22a447;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 6px #00000055;
+}
+
+.spot-icon.occupied {
+  background: #e53935;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 6px #00000055;
+}
+
+.spot-icon.nearest {
+  background: #00cfe8;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 0 0 3px #007e91, 0 2px 8px #00000055;
+}
+
+@media (max-width: 800px) {
+
+  .stats {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  #map {
+
+    height: 430px;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .container {
+
+    padding: 12px;
+
+  }
+
+  .stats {
+
+    gap: 9px;
+
+  }
+
+  .card {
+
+    padding: 13px;
+
+  }
+
+  .number {
+
+    font-size: 25px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+  <div style="display:flex;align-items:center;gap:13px">
+
+    <div class="logo">HM</div>
+
+    <div>
+
+      <h1>Smart Parking HM</h1>
+
+      <div class="subtitle">
+
+        نظام محاكاة مواقف جامعة جدة
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <span>● المحاكاة تعمل</span>
+
+</header>
+
+<h2>جامعة جدة — فرع الفيصلية</h2>
+
+<p class="subtitle">
+
+  اكتشفي المواقف المتاحة وتابعي حالة المواقف على الخريطة.
+
+</p>
+
+<!-- إحصائيات المواقف -->
+
+<section class="stats">
+
+  <div class="card">
+
+    <h3>إجمالي المواقف</h3>
+
+    <div class="number" id="total">48</div>
+
+    <div class="subtitle">موقف تجريبي</div>
+
+  </div>
+
+  <div class="card">
+
+    <h3>المواقف المتاحة</h3>
+
+    <div class="number available-text" id="available">—</div>
+
+   <div class="progress">
+
+      <div id="availableBar"
+
+           style="background:var(--green);width:50%"></div>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <h3>المواقف المشغولة</h3>
+
+    <div class="number occupied-text" id="occupied">—</div>
+
+    <div class="progress">
+
+      <div id="occupiedBar"
+
+           style="background:var(--red);width:50%"></div>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <h3>نسبة الإشغال</h3>
+
+    <div class="number" id="occupancy">—%</div>
+
+    <div class="subtitle" id="freeRate">—% متاحة</div>
+
+  </div>
+
+</section>
+
+<!-- الخريطة -->
+
+<section class="panel">
+
+  <div class="map-header">
+
+    <div>
+
+      <h3 style="margin:0">خريطة المواقف</h3>
+
+      <div class="subtitle">
+
+        اضغطي على الموقف لمعرفة حالته
+
+      </div>
+
+    </div>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+
+      <button class="secondary" id="locateBtn">
+
+        ◎ تحديد موقعي
+
+      </button>
+
+      <button class="primary" id="refreshBtn">
+
+        ↻ تحديث المواقف
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <div id="map"></div>
+
+  <div class="legend">
+
+    <span><i class="dot green-dot"></i> متاح</span>
+
+    <span><i class="dot red-dot"></i> مشغول</span>
+
+  </div>
+
+  <div class="status-message" id="updated">
+
+    المحاكاة تستخدم بيانات تجريبية.
+
+  </div>
+
+</section>
+
+<!-- أقرب موقف -->
+
+<section class="panel">
+
+  <h3>أقرب موقف متاح</h3>
+
+  <div class="number" id="nearest">حددي موقعك أولًا</div>
+
+  <p class="status-message" id="distance">
+
+    بعد تحديد موقعك، سيبحث النظام عن أقرب موقف متاح.
+
+  </p>
+
+  <button class="primary" id="navigateBtn" disabled>
+
+    التوجيه إلى الموقف
+
+  </button>
+
+</section>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+/* =================================
+
+   1. إعدادات البرنامج
+
+================================= */
+
+// عدّلي هذه القيم عند الحاجة.
+
+// هذه إحداثيات تقريبية للعرض التجريبي وليست حدود الجامعة المؤكدة.
+
+const CAMPUS = [21.516, 39.183];
+
+const TOTAL = 48;
+
+// تتغير بعض الحالات كل 15 ثانية.
+
+const REFRESH_SECONDS = 15;
+
+const spots = [];
+
+let userLocation = null;
+
+let userMarker = null;
+
+let routeLine = null;
+
+let nearestSpot = null;
+
+// إنشاء الخريطة
+
+const map = L.map("map").setView(CAMPUS, 17);
+
+// خريطة شوارع من OpenStreetMap
+
+L.tileLayer(
+
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+
+  {
+
+    maxZoom: 20,
+
+    attribution: "&copy; OpenStreetMap"
+
+  }
+
+).addTo(map);
+
+const spotLayer = L.layerGroup().addTo(map);
+
+/* =================================
+
+   2. إنشاء المواقف التجريبية
+
+================================= */
+
+function createSpots() {
+
+  const rows = 6;
+
+  const columns = 8;
+
+  let number = 0;
+
+  for (let row = 0; row < rows; row++) {
+
+    for (let col = 0; col < columns; col++) {
+
+      number++;
+
+      const lat = CAMPUS[0] + (row - 2.5) * 0.000105;
+
+      const lng = CAMPUS[1] + (col - 3.5) * 0.000125;
+
+      const spot = {
+
+        id: "P-" + String(number).padStart(2, "0"),
+
+        coords: [lat, lng],
+
+        status: Math.random() > 0.48
+
+          ? "available"
+
+          : "occupied",
+
+        marker: null
+
+      };
+
+      spots.push(spot);
+
+      drawSpot(spot);
+
+    }
+
+  }
+
+  updateStats();
+
+}
+
+/* =================================
+
+   3. عرض الموقف بلون حالته
+
+================================= */
+function drawSpot(spot) {
+   const isNearest = nearestSpot && nearestSpot.id === spot.id;
+
+  const marker = L.marker(spot.coords, {
+    icon: L.divIcon({
+        className: "spot-marker",
+        html: `
+            <div class="spot-icon ${isNearest ? "nearest" : ""} ${
+           spot.status === "available" ? "available" : "occupied"
+            }">
+                ${spot.status === "available" ? "P" : "×"}
+            </div>
+        `,
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+    })
+}).addTo(map);
+
+marker.bindPopup(`
+    <div>
+        <strong>Parking ${spot.id}</strong>
+        <p>${spot.available ? "Available" : "Occupied"}</p>
+        ${
+            spot.available
+                ? `<button onclick="openGoogleMaps(${spot.id})">
+                    Get Directions
+                   </button>`
+                : ""
+        }
+    </div>
+`);
+
+marker.on("click", function () {
+    if (spot.available) {
+        nearestSpot = spot;
+    }
+});
+
+return marker;
+}
+
+/* =================================
+
+   4. تحديث الإحصائيات
+
+================================= */
+
+function updateStats() {
+
+  const available = spots.filter(
+
+    spot => spot.status === "available"
+
+  ).length;
+
+  const occupied = TOTAL - available;
+
+  const availablePercent = Math.round(
+
+    available / TOTAL * 100
+
+  );
+
+  const occupiedPercent = 100 - availablePercent;
+
+  document.getElementById("total").textContent = TOTAL;
+
+  document.getElementById("available").textContent = available;
+
+  document.getElementById("occupied").textContent = occupied;
+
+  document.getElementById("occupancy").textContent =
+
+    occupiedPercent + "%";
+
+  document.getElementById("freeRate").textContent =
+
+    availablePercent + "% من المواقف متاحة";
+
+  document.getElementById("availableBar").style.width =
+
+    availablePercent + "%";
+
+  document.getElementById("occupiedBar").style.width =
+
+    occupiedPercent + "%";
+
+  document.getElementById("updated").textContent =
+
+    "آخر تحديث: " +
+
+    new Date().toLocaleTimeString("ar-SA") +
+
+    " — بيانات محاكاة";
+
+}
+
+/* =================================
+
+   5. المحاكاة العشوائية
+
+================================= */
+
+function refreshSimulation(manual = false) {
+
+  const changes = manual ? 8 : 2 + Math.floor(Math.random() * 5);
+
+  for (let i = 0; i < changes; i++) {
+
+    const index = Math.floor(Math.random() * spots.length);
+
+    const spot = spots[index];
+
+    spot.status = Math.random() > 0.48
+
+      ? "available"
+
+      : "occupied";
+
+    drawSpot(spot);
+
+  }
+
+  updateStats();
+
+  // بعد التحديث نبحث عن أقرب موقف متاح مرة أخرى.
+
+  if (userLocation) {
+
+    findNearest();
+
+  }
+
+  if (manual) {
+
+    document.getElementById("updated").textContent =
+
+      "تم تحديث المحاكاة يدويًا.";
+
+  }
+
+}
+
+document.getElementById("refreshBtn").addEventListener(
+
+  "click",
+
+  () => refreshSimulation(true)
+
+);
+
+// تحديث تلقائي كل 15 ثانية.
+
+setInterval(
+
+  () => refreshSimulation(false),
+
+  REFRESH_SECONDS * 1000
+
+);
+
+/* =================================
+
+   6. تحديد موقع المستخدم
+
+================================= */
+
+document.getElementById("locateBtn").addEventListener(
+
+  "click",
+
+  () => {
+
+    if (!navigator.geolocation) {
+
+      alert("المتصفح لا يدعم تحديد الموقع.");
+
+      return;
+
+    }
+
+    navigator.geolocation.getCurrentPosition(
+
+      position => {
+
+        userLocation = [
+
+          position.coords.latitude,
+
+          position.coords.longitude
+
+        ];
+
+        if (userMarker) {
+
+          map.removeLayer(userMarker);
+
+        }
+
+        userMarker = L.circleMarker(userLocation, {
+
+          radius: 9,
+
+          color: "#ffffff",
+
+          weight: 3,
+
+          fillColor: "#45b9e8",
+
+          fillOpacity: 1
+
+        }).addTo(map).bindPopup("موقعك الحالي");
+
+        map.setView(userLocation, 17);
+
+        findNearest();
+
+      },
+
+      () => {
+
+        alert(
+
+          "تعذر تحديد موقعك. اسمحي للمتصفح بالوصول للموقع، " +
+
+          "وجربي تشغيل الصفحة عبر localhost أو HTTPS."
+
+        );
+
+      },
+
+      {
+
+        enableHighAccuracy: true,
+
+        timeout: 12000
+
+      }
+
+    );
+
+  }
+
+);
+
+/* =================================
+
+   7. البحث عن أقرب موقف متاح
+
+================================= */
+
+function findNearest() { 
+  if (!userLocation) return;
+  const available = spots.filter(
+    spot => spot.status === "available"
+);
+
+if (available.length === 0) {
+    nearestSpot = null;
+
+    document.getElementById("nearest").textContent =
+        "لا توجد مواقف متاحة";
+
+    document.getElementById("distance").textContent =
+        "جرّبي تحديث المحاكاة بعد قليل.";
+
+    document.getElementById("navigateBtn").disabled = true;
+    return;
+}
+
+nearestSpot = available.reduce((best, spot) => {
+    const currentDistance = map.distance(
+        userLocation,
+        spot.coords
+    );
+
+    const bestDistance = map.distance(
+        userLocation,
+        best.coords
+    );
+
+    return currentDistance < bestDistance ? spot : best;
+});
+
+document.getElementById("nearest").textContent = nearestSpot.id;
+document.getElementById("navigateBtn").disabled = false;
+
+updateDistance();
+
+// تحديث شكل المواقف لإبراز الأقرب
+spots.forEach(spot => drawSpot(spot));
+
+map.panTo(nearestSpot.coords);
+
+if (nearestSpot.marker) {
+    nearestSpot.marker.openPopup();
+}
+}
+
+function updateDistance() { 
+  if (!userLocation || !nearestSpot) return;
+  const meters = map.distance(
+    userLocation,
+    nearestSpot.coords
+);
+
+document.getElementById("distance").textContent =
+    "المسافة التقريبية بخط مستقيم: " +
+    Math.round(meters) + " متر.";
+}
+  
+  
+  
+
+/* =================================
+
+   8. التوجيه إلى الموقف
+
+================================= */
+
+document.getElementById("navigateBtn").addEventListener(
+
+  "click",
+
+  () => {
+
+    if (!nearestSpot || !userLocation) return;
+
+    // رابط اتجاهات خارجي. الإحداثيات تجريبية.
+
+    const destination = nearestSpot.coords;
+
+    const url =
+
+      "https://www.google.com/maps/dir/?api=1" +
+
+      "&origin=" + userLocation.join(",") +
+
+      "&destination=" + destination.join(",") +
+
+      "&travelmode=driving";
+
+    window.open(url, "_blank");
+
+  }
+
+);
+
+/* =================================
+
+   9. تشغيل البرنامج
+
+================================= */
+
+createSpots();
+
+</script>
+
+<!-- Project Creators Section -->
+
+<section class="creators-section">
+
+  <div class="creators-heading">
+
+    <span class="creators-line"></span>
+
+    <p>THE PEOPLE BEHIND THE IDEA</p>
+
+    <h2>Meet the Creators</h2>
+
+    <span class="creators-description">
+
+      The vision and innovation behind Smart Parking HM
+
+    </span>
+
+  </div>
+
+  <div class="creators-grid">
+
+    <div class="creator-card">
+
+      <div class="creator-icon">H</div>
+
+      <h3>Hala Al-mazmumi</h3>
+
+      <span class="creator-role">
+
+
+     
+  </div>
+
+  <p class="creators-footer">
+
+    SMART PARKING HM
+
+    <span> | </span>
+
+    UNIVERSITY OF JEDDAH
+
+  </p>
+
+</section>
+
+<style>
+
+.creators-section {
+
+  margin-top: 35px;
+
+  padding: 38px 24px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2edf5;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  font-family: Tahoma, Arial, sans-serif;
+
+}
+
+.creators-heading p {
+
+  color: #45b9e8;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+}
+
+.creators-heading h2 {
+
+  color: #12345a;
+
+  font-size: 27px;
+
+  margin: 10px 0;
+
+}
+
+.creators-description {
+
+  display: block;
+
+  color: #71849a;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+}
+
+.creators-line {
+
+  display: block;
+
+  width: 45px;
+
+  height: 4px;
+
+  background: #45b9e8;
+
+  border-radius: 5px;
+
+  margin: 0 auto 15px;
+
+}
+
+.creators-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+
+  max-width: 760px;
+
+  margin: 28px auto;
+
+}
+
+.creator-card {
+
+  background: #12345a;
+
+  color: #ffffff;
+
+  padding: 27px 14px;
+
+  border-radius: 15px;
+
+  border-bottom: 4px solid #45b9e8;
+
+  transition: transform 0.25s, box-shadow 0.25s;
+
+}
+
+.creator-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 24px #12345a20;
+
+}
+
+.creator-icon {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 52px;
+
+  height: 52px;
+
+  margin: 0 auto 17px;
+
+  border-radius: 50%;
+
+  background: #45b9e8;
+
+  color: #12345a;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+}
+
+.creator-card h3 {
+
+  font-size: 17px;
+
+  overflow-wrap: anywhere;
+
+  margin: 0 0 13px;
+
+}
+
+.creator-role {
+
+  display: inline-block;
+
+  color: #a9e5fb;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.5px;
+
+}
+
+.creators-footer {
+
+  color: #71849a;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  margin-top: 30px;
+
+}
+
+.creators-footer span {
+
+  color: #45b9e8;
+
+}
+
+@media (max-width: 500px) {
+
+  .creators-section {
+
+    padding: 28px 12px 20px;
+
+  }
+
+  .creators-grid {
+
+    gap: 10px;
+
+  }
+
+  .creator-card {
+
+    padding: 22px 9px;
+
+  }
+
+  .creator-card h3 {
+
+    font-size: 14px;
+
+  }
+
+  .creator-role {
+
+    font-size: 9px;
+
+  }
+
+  .creators-heading h2 {
+
+    font-size: 23px;
+
+  }
+
+}
+
+</style>   
+
+</body>
+
+</html>
