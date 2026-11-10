@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   SPOTLY | Smart Parking
+  </title>
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+  <style>
+   :root {
+  --bg: #151515;
+  --surface: #242424;
+  --surface2: #343434;
+  --brick: #81291d;
+  --brick2: #a43b2b;
+  --cream: #f5f3ef;
+  --muted: #b8b8b8;
+  --line: #454545;
+  --green: #42c78b;
+  --red: #ed7777;
+  --orange: #ed9b36;
+  --blue: #4297ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: Tahoma,Arial,sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 22px 55px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-small {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  direction: ltr;
+}
+
+.brand-small b {
+  color: #bd5140;
+}
+
+.tag {
+  border: 1px solid #724036;
+  border-radius: 50px;
+  padding: 7px 14px;
+  color: #e5b6aa;
+  font-size: 12px;
+  background: #291c1a;
+}
+
+.hero {
+  margin: 25px 0 22px;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 24px;
+  align-items: center;
+  background: linear-gradient(115deg,#1e1e1e,#292221);
+  border: 1px solid #49312e;
+  border-radius: 25px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.eyebrow {
+  color: #cf7969;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(26px,4vw,45px);
+  line-height: 1.35;
+  margin: 10px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.hero-logo {
+  background: #151515;
+  border: 1px solid #42312e;
+  border-radius: 20px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+button {
+  font: inherit;
+  font-weight: bold;
+  border: 0;
+  border-radius: 11px;
+  padding: 12px 17px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: var(--brick);
+  color: #fff;
+}
+
+.secondary {
+  background: var(--surface2);
+  color: var(--cream);
+  border: 1px solid #565656;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 22px 0 12px;
+}
+
+.section-heading h2 {
+  font-size: 21px;
+  margin: 0;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 14px;
+}
+
+.card,.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px #00000018;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  font-weight: normal;
+}
+
+.number {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 8px 0;
+  direction: ltr;
+  text-align: right;
+}
+
+.available-text {
+  color: var(--green);
+}
+
+.occupied-text {
+  color: var(--red);
+}
+
+.progress {
+  height: 6px;
+  background: #414141;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress>div {
+  height: 100%;
+  transition: width .4s;
+}
+
+.panel {
+  padding: 22px;
+  margin-top: 18px;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.map-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+#map {
+  height: 510px;
+  width: 100%;
+  border-radius: 13px;
+  background: #333;
+  z-index: 0;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.green-dot {
+  background: var(--green);
+}
+
+.red-dot {
+  background: var(--red);
+}
+
+.nearest-dot {
+  background: #f5b866;
+}
+
+.orange-dot {
+  background: var(--orange);
+}
+
+.blue-dot {
+  background: var(--blue);
+}
+
+.status-message {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 13px;
+}
+
+.spot-icon {
+  height: 29px;
+  width: 29px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 3px 9px #0009;
+}
+
+.spot-icon.available {
+  background: #23875c;
+}
+
+.spot-icon.occupied {
+  background: #b74747;
+}
+
+.spot-icon.staff {
+  background: #d47c18;
+}
+
+.spot-icon.accessible {
+  background: #287fce;
+}
+
+.spot-icon.nearest {
+  background: #B6FF00;
+  color: #151515;
+  border: 2px solid #ffffff;
+
+  box-shadow:
+    0 0 10px #B6FF00,
+    0 0 22px #B6FF00,
+    0 0 38px #B6FF0080;
+
+  animation: nearestGlow 1.5s infinite alternate;
+}
+
+@keyframes nearestGlow {
+  from {
+    box-shadow:
+      0 0 8px #B6FF00,
+      0 0 16px #B6FF0080;
+  }
+
+  to {
+    box-shadow:
+      0 0 18px #B6FF00,
+      0 0 35px #B6FF00,
+      0 0 50px #B6FF0080;
+  }
+}
+
+.nearest-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nearest-panel h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.nearest-panel .number {
+  font-size: 23px;
+}
+
+.creators-section {
+  margin-top: 24px;
+  padding: 35px 22px 25px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.creators-line {
+  display: block;
+  width: 52px;
+  height: 3px;
+  background: var(--brick2);
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+
+.creators-heading p {
+  color: #cb7c6d;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.creators-heading h2 {
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.creators-description {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 15px;
+  max-width: 760px;
+  margin: 24px auto;
+}
+
+.creator-card {
+  background: #303030;
+  border: 1px solid #4a4a4a;
+  border-bottom: 3px solid var(--brick2);
+  border-radius: 16px;
+  padding: 24px 12px;
+  transition: .2s;
+}
+
+.creator-card:hover {
+  transform: translateY(-3px);
+  border-color: #995247;
+}
+
+.creator-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #502921;
+  color: #f5f3ef;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 14px;
+}
+
+.creator-card h3 {
+  font-size: 17px;
+  margin: 0 0 7px;
+  overflow-wrap: anywhere;
+}
+
+.creator-role {
+  font-size: 10px;
+  color: #d2aaa1;
+  letter-spacing: .7px;
+}
+
+.creators-footer {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  margin-top: 22px;
+}
+
+.creators-footer span {
+  color: #b64a39;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+}
+
+.leaflet-popup-content button {
+  padding: 7px 10px;
+  background: #81291d;
+  color: white;
+}
+
+@media (max-width:800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    order: -1;
+    min-height: 0;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  #map {
+    height: 420px;
+  }
+
+}
+
+@media (max-width:500px) {
+  .container {
+    padding: 12px;
+  }
+
+  .hero {
+    padding: 17px;
+  }
+
+  .panel {
+    padding: 13px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .number {
+    font-size: 25px;
+  }
+
+  .creators-grid {
+    gap: 9px;
+  }
+
+  .creator-card {
+    padding: 20px 8px;
+  }
+
+  .creator-card h3 {
+    font-size: 13px;
+  }
+
+  .creator-role {
+    font-size: 9px;
+  }
+
+  .topbar {
+    padding: 12px 2px 16px;
+  }
+
+  .brand-small {
+    font-size: 17px;
+  }
+
+}
+
+/* نافذة عن الفريق */
+.team-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.82);
+    align-items: center;
+    justify-content: center;
+}
+.team-modal.is-open { display: flex; }
+.team-box {
+    position: relative;
+    width: 100%;
+    max-width: 570px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 38px 30px;
+    background: var(--surface);
+    color: var(--cream);
+    border: 1px solid var(--brick2);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px #0009;
+    text-align: center;
+    direction: rtl;
+}
+.team-box h2 { margin: 0 0 20px; }
+.team-box p { color: var(--muted); line-height: 2; margin: 0 0 16px; }
+.team-box strong { color: var(--cream); }
+.team-close {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    padding: 4px 12px;
+    background: transparent;
+    color: var(--cream);
+    font-size: 29px;
+}
+.team-close:focus-visible { outline: 2px solid var(--cream); }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <header class="topbar">
+    <div class="brand-small">
+     SPOTLY
+     <b>
+      .
+     </b>
+    </div>
+    <span class="tag">
+     ● نموذج تجريبي · Simulation
+    </span>
+   </header>
+   <section class="hero">
+    <div>
+     <div class="eyebrow">
+      SMART PARKING EXPERIENCE
+     </div>
+     <h1>
+      موقفك الأقرب،
+      <br/>
+      بخطوة أذكى.
+     </h1>
+     <p>
+      سبوتلي — تجربة تفاعلية لاستكشاف المواقف المتاحة في جامعة جدة، فرع الفيصلية، والتوجيه إلى الموقف المختار عبر Google Maps.
+     </p>
+     <div class="hero-actions">
+      <button class="primary" onclick="document.getElementById('parking-map').scrollIntoView({behavior:'smooth'})">
+       استكشاف المواقف ←
+      </button>
+      <button class="secondary" onclick="openTeamModal()" aria-haspopup="dialog" aria-controls="teamModal">
+       عن الفريق
+      </button>
+      <a href="buses.html"
+   style="display:inline-block;
+          background:#81291D;
+          color:#F5F3EF;
+          padding:12px 18px;
+          border-radius:11px;
+          text-decoration:none;
+          font-weight:bold;">
+  🚌 متابعة الباصات
+</a>
+     </div>
+    </div>
+    <div class="hero-logo">
+     <img alt="SPOTLY — Smart Parking &amp; Bus Tracking" src="spotly-logo.jpg"/>
+    </div>
+   </section>
+   <div class="section-heading">
+    <h2>
+     لوحة المواقف
+    </h2>
+    <span class="hint">
+     جامعة جدة — فرع الفيصلية
+    </span>
+   </div>
+   <section class="stats">
+    <div class="card">
+     <h3>
+      إجمالي المواقف
+     </h3>
+     <div class="number" id="total">
+      —
+     </div>
+     <div class="hint" id="dataSource">
+      مواقف تجريبية
+     </div>
+    </div>
+    <div class="card">
+     <h3>
+      المواقف المتاحة
+     </h3>
+     <div class="number available-text" id="available">
+      —
+     </div>
+     <div class="progress">
+      <div id="availableBar" style="background:var(--green);width:0">
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <h3>
+      المواقف المشغولة
+     </h3>
+     <div class="number occupied-text" id="occupied">
+      —
+     </div>
+     <div class="progress">
+      <div id="occupiedBar" style="background:var(--red);width:0">
+      </div>
+     </div>
+    </div>
+    <div class="card">
+     <h3>
+      نسبة الإشغال
+     </h3>
+     <div class="number" id="occupancy">
+      —%
+     </div>
+     <div class="hint" id="freeRate">
+      —% متاحة
+     </div>
+    </div>
+   </section>
+   <section class="panel" id="parking-map">
+    <div class="map-header">
+     <div>
+      <h2>
+       خريطة المواقف
+      </h2>
+      <div class="hint">
+       اضغطي على الموقف لعرض حالته
+      </div>
+     </div>
+     <div class="controls">
+      <button class="secondary" id="locateBtn">
+       ◎ تحديد موقعي
+      </button>
+      <button class="primary" id="refreshBtn">
+       ↻ تحديث المحاكاة
+      </button>
+     </div>
+    </div>
+    <div id="map">
+    </div>
+    <div class="legend">
+     <span>
+      <i class="dot green-dot">
+      </i>
+      متاح
+     </span>
+     <span>
+      <i class="dot red-dot">
+      </i>
+      مشغول
+     </span>
+     <span>
+      <i class="dot orange-dot">
+      </i>
+     الجامعة أعضاء هيئة التدريس 
+     </span>
+     <span>
+      <i class="dot blue-dot">
+      </i>
+      ذوو الإعاقة
+     </span>
+     
+    </div>
+    <div class="status-message" id="updated">
+     المواقف الخضراء والحمراء عامة، والبرتقالية للمنسوبين، والزرقاء لذوي الإعاقة. الإشغال محاكاة.
+    </div>
+   </section>
+   <section class="panel nearest-panel">
+    <div>
+     <h2>
+      أقرب موقف متاح
+     </h2>
+     <div class="number" id="nearest">
+      حددي موقعك أولًا
+     </div>
+     <div class="status-message" id="distance">
+      يتم اقتراح أقرب موقف عام متاح بخط مستقيم. المواقف المخصصة تظهر على الخريطة.
+     </div>
+    </div>
+    <button class="primary" disabled="" id="navigateBtn">
+     التوجيه عبر Google Maps ↗
+    </button>
+   </section>
+   <section class="creators-section" id="creators">
+    <div class="creators-heading">
+     <span class="creators-line">
+     </span>
+     <p>
+      THE PEOPLE BEHIND THE IDEA
+     </p>
+     <h2>
+      Meet the Creators
+     </h2>
+     <span class="creators-description">
+      The vision and innovation behind SPOTLY
+     </span>
+    </div>
+    <div class="creators-grid">
+     <div class="creator-card">
+      <div class="creator-icon">
+       H
+      </div>
+      <h3>
+       Hala Al-mazmumi
+      </h3>
+      <span class="creator-role">
+       CO-CREATOR &amp; SYSTEM DEVELOPER
+      </span>
+     </div>
+     <div class="creator-card">
+      <div class="creator-icon">
+       M
+      </div>
+      <h3>
+       Mihaf Al-seabaie
+      </h3>
+      <span class="creator-role">
+       CO-CREATOR &amp; SYSTEM DEVELOPER
+      </span>
+     </div>
+    </div>
+    <p class="creators-footer">
+     SPOTLY
+     <span>
+      |
+     </span>
+     UNIVERSITY OF JEDDAH
+    </p>
+   </section>
+  </div>
+
+  <!-- نافذة عن الفريق: تفتح من زر أعلى الصفحة -->
+  <div class="team-modal" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle" aria-hidden="true">
+   <div class="team-box">
+    <button class="team-close" type="button" onclick="closeTeamModal()" aria-label="إغلاق نافذة عن الفريق">&times;</button>
+    <h2 id="teamModalTitle">عن الفريق | About Us</h2>
+    <p>نحن <strong>حلا المزمومي وميهاف السبيعي</strong>، طالبتان في تخصص نظم المعلومات الجغرافية بجامعة جدة.</p>
+    <p>انطلق مشروع <strong>SPOTLY</strong> من إيماننا بأن التقنية قادرة على تقديم حلول مبتكرة للمشكلات اليومية. ومن هنا جاءت فكرتنا لتسهيل العثور على المواقف المتاحة، وتقليل الوقت والجهد، والمساهمة في تنظيم حركة المركبات داخل الحرم الجامعي.</p>
+    <p><strong>نطمح أن يكون SPOTLY أكثر من مجرد مشروع جامعي، بل خطوة نحو حل ذكي ومستدام يستفيد منه الجميع، وقابل للتطوير والتطبيق على نطاق أوسع مستقبلًا.</strong></p>
+   </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+  <script>
+   "use strict";
+const CAMPUS = [21.5814550, 39.1829384], REFRESH_SECONDS = 15;
+let spots = [], userLocation = null, userMarker = null, nearestSpot = null;
+const map = L.map("map").setView(CAMPUS, 19);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap contributors", maxZoom: 19 }).addTo(map);
+const spotLayer = L.layerGroup().addTo(map);
+const el = id => document.getElementById(id);
+function isValidCoords(c) { return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]) && Math.abs(c[0]) <= 90 && Math.abs(c[1]) <= 180; }
+function createDemoSpots() {
+    const arr = [];
+    for (let r = 0; r < 10; r++)
+        for (let c = 0; c < 12; c++) {
+            const i = r * 12 + c;
+            const category = i % 20 === 0 ? "accessible" : i % 5 === 0 ? "staff" : "general";
+            arr.push({ id: `P-${i + 1}`, coords: [CAMPUS[0] + (r - 4.5) * .000095, CAMPUS[1] + (c - 5.5) * .000095], category, status: Math.random() > .42 ? "available" : "occupied", marker: null });
+        }
+    return arr;
+}
+async function createSpots() {
+    let fromGeojson = false;
+    try {
+        const response = await fetch("parking_spots.geojson");
+        if (!response.ok)
+            throw Error("GeoJSON not found");
+        const data = await response.json();
+        if (!Array.isArray(data.features))
+            throw Error("Invalid GeoJSON");
+        const valid = data.features.filter(f => f.geometry?.type === "Point" && isValidCoords([f.geometry.coordinates[1], f.geometry.coordinates[0]]));
+        if (!valid.length)
+            throw Error("No valid coordinates");
+        spots = valid.map((f, i) => ({ id: String(f.properties?.spot_ID ?? f.properties?.spot_id ?? `P-${i + 1}`), coords: [f.geometry.coordinates[1], f.geometry.coordinates[0]], category: (() => { const t = String(f.properties?.category ?? f.properties?.type ?? "").toLowerCase(); return /accessible|disabled|ذوي|اعاقة|إعاقة/.test(t) ? "accessible" : /staff|faculty|employee|منسوب|دكتور/.test(t) ? "staff" : "general"; })(), status: f.properties?.status === "occupied" ? "occupied" : "available", marker: null }));
+        fromGeojson = true;
+    }
+    catch (e) {
+        spots = createDemoSpots();
+        console.info("Demo spots used:", e.message);
+    }
+    el("dataSource").textContent = fromGeojson ? "بيانات مواقع من GeoJSON (حالات تجريبية)" : "120 موقفًا تجريبيًا";
+    el("updated").textContent = fromGeojson ? "تم تحميل مواقع من GeoJSON؛ حالات الإشغال تجريبية وليست مباشرة." : "وضع المحاكاة: 120 موقفًا تجريبيًا بإحداثيات تقريبية.";
+    drawAll();
+    updateStats();
+    if (userLocation)
+        findNearest();
+}
+function drawAll() {
+    spotLayer.clearLayers();
+    for (const spot of spots) {
+      
+const nearest =
+  userLocation !== null &&
+  nearestSpot?.id === spot.id &&
+  spot.status === "available";
+
+        const categoryClass = spot.category === "staff" ? "staff" : spot.category === "accessible" ? "accessible" : spot.status;
+        const symbol = spot.category === "staff" ? "S" : spot.category === "accessible" ? "♿" : spot.status === "available" ? "P" : "×";
+        const icon = L.divIcon({ className: "spot-marker", html: `<div class="spot-icon ${nearest ? "nearest" : categoryClass}">${symbol}</div>`, iconSize: [29, 29], iconAnchor: [14, 14] });
+        spot.marker = L.marker(spot.coords, { icon }).addTo(spotLayer);
+        const node = document.createElement("div");
+        const strong = document.createElement("strong");
+        strong.textContent = `Parking ${spot.id}`;
+        node.append(strong);
+        const p = document.createElement("p");
+        p.textContent = (spot.category === "staff" ? "مخصص لمنسوبي الجامعة (الدكاترة والموظفين) — " : spot.category === "accessible" ? "مخصص لذوي الإعاقة — " : "موقف عام — ") + (spot.status === "available" ? "متاح (محاكاة)" : "مشغول (محاكاة)");
+        node.append(p);
+        if (spot.status === "available") {
+            const btn = document.createElement("button");
+            btn.textContent = "التوجيه إلى هذا الموقف";
+            btn.onclick = () => openGoogleMaps(spot.coords);
+            node.append(btn);
+        }
+        spot.marker.bindPopup(node);
+    }
+}
+function updateStats() {
+    const total = spots.length, available = spots.filter(s => s.status === "available").length, occupied = total - available, free = total ? Math.round(100 * available / total) : 0;
+    el("total").textContent = total;
+    el("available").textContent = available;
+    el("occupied").textContent = occupied;
+    el("occupancy").textContent = (100 - free) + "%";
+    el("freeRate").textContent = free + "% متاحة";
+    el("availableBar").style.width = free + "%";
+    el("occupiedBar").style.width = (100 - free) + "%";
+}
+function refreshSimulation(manual = false) {
+    if (!spots.length)
+        return;
+    const changes = Math.min(spots.length, manual ? 8 : 2 + Math.floor(Math.random() * 5));
+    for (let i = 0; i < changes; i++) {
+        const s = spots[Math.floor(Math.random() * spots.length)];
+        s.status = Math.random() > .48 ? "available" : "occupied";
+    }
+    if (userLocation)
+        findNearest(false);
+    else
+        drawAll();
+    updateStats();
+    el("updated").textContent = `آخر تحديث للمحاكاة: ${new Date().toLocaleTimeString("ar-SA")} — ليست بيانات كاميرات فعلية.`;
+}
+el("refreshBtn").onclick = () => refreshSimulation(true);
+setInterval(() => refreshSimulation(false), REFRESH_SECONDS * 1000);
+el("locateBtn").onclick = () => {
+    if (!navigator.geolocation) {
+        alert("المتصفح لا يدعم تحديد الموقع.");
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(pos => {
+        userLocation = [pos.coords.latitude, pos.coords.longitude];
+        if (userMarker)
+            map.removeLayer(userMarker);
+        userMarker = L.circleMarker(userLocation, { radius: 9, color: "#fff", weight: 3, fillColor: "#a43b2b", fillOpacity: 1 }).addTo(map).bindPopup("موقعك الحالي");
+        map.setView(userLocation, 17);
+        findNearest();
+    }, () => alert("تعذر تحديد الموقع. اسمحي بإذن الموقع واستخدمي HTTPS أو localhost."), { enableHighAccuracy: true, timeout: 12000 });
+};
+function findNearest(pan = true) {
+    if (!userLocation)
+        return;
+    const available = spots.filter(s => s.status === "available" && s.category === "general");
+    nearestSpot = available.length ? available.reduce((a, b) => map.distance(userLocation, a.coords) < map.distance(userLocation, b.coords) ? a : b) : null;
+    el("navigateBtn").disabled = !nearestSpot;
+    el("nearest").textContent = nearestSpot ? nearestSpot.id : "لا توجد مواقف متاحة";
+    el("distance").textContent = nearestSpot ? `المسافة التقريبية بخط مستقيم: ${Math.round(map.distance(userLocation, nearestSpot.coords))} متر. بيانات تجريبية.` : "جرّبي تحديث المحاكاة.";
+    drawAll();
+    if (nearestSpot && pan) {
+        map.panTo(nearestSpot.coords);
+        nearestSpot.marker.openPopup();
+    }
+}
+function openGoogleMaps(coords) {
+    const dest = coords.join(",");
+    const url = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(dest) + "&travelmode=driving" + (userLocation ? "&origin=" + encodeURIComponent(userLocation.join(",")) : "");
+    window.open(url, "_blank", "noopener,noreferrer");
+}
+el("navigateBtn").onclick = () => { if (nearestSpot)
+    openGoogleMaps(nearestSpot.coords); };
+
+// التحكم في نافذة «عن الفريق»
+const teamModal = document.getElementById("teamModal");
+let previousFocus = null;
+
+function openTeamModal() {
+    previousFocus = document.activeElement;
+    teamModal.classList.add("is-open");
+    teamModal.setAttribute("aria-hidden", "false");
+    teamModal.querySelector(".team-close").focus();
+}
+
+function closeTeamModal() {
+    teamModal.classList.remove("is-open");
+    teamModal.setAttribute("aria-hidden", "true");
+    if (previousFocus) previousFocus.focus();
+}
+
+teamModal.addEventListener("click", (event) => {
+    if (event.target === teamModal) closeTeamModal();
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && teamModal.classList.contains("is-open")) {
+        closeTeamModal();
+    }
+});
+
+createSpots();
+  </script>
+ </body>
+</html>
+

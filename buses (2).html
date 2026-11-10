@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPOTLY | الباصات</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <style>
+    :root {
+      --bg: #151515;
+      --panel: #242424;
+      --panel2: #303030;
+      --red: #a43b2b;
+      --text: #f5f3ef;
+      --muted: #bdbdbd;
+      --green: #55d49b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      width: min(1100px, 94%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid #383838;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    .brand span {
+      color: var(--red);
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .back {
+      padding: 8px 12px;
+      background: var(--panel);
+      border-radius: 9px;
+    }
+
+    main {
+      padding: 28px 0 45px;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      font-size: 27px;
+    }
+
+    .intro {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    .notice {
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      background: #3a2c1d;
+      border: 1px solid #76572d;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .card {
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid #383838;
+      border-radius: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 19px;
+    }
+
+    .location-label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .selected-name {
+      margin: 4px 0;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .eta {
+      margin: 8px 0;
+      color: var(--green);
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    button {
+      padding: 10px 14px;
+      background: var(--red);
+      color: white;
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button:hover {
+      filter: brightness(1.12);
+    }
+
+    .location-status {
+      min-height: 22px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    #map {
+      width: 100%;
+      height: 480px;
+      border-radius: 12px;
+      z-index: 0;
+    }
+
+    .map-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .stations {
+      margin-top: 16px;
+    }
+
+    .station-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      margin: 7px 0;
+      padding: 12px;
+      background: var(--panel2);
+      border: 1px solid #484848;
+      text-align: right;
+    }
+
+    .station-row.active {
+      border-color: var(--red);
+      background: #432d29;
+    }
+
+    .station-time {
+      white-space: nowrap;
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .bus-icon {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      background: #f2b453;
+      border: 2px solid #2b2b2b;
+      border-radius: 50%;
+      font-size: 16px;
+    }
+
+    @media (max-width: 760px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      #map {
+        height: 390px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap header-row">
+      <div class="brand">SPOTLY<span>.</span></div>
+      <a class="back" href="index.html">
+        ← العودة للمواقف
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>🚌 متابعة باصات الجامعة</h1>
+    <p class="intro">
+      اعرفي أقرب محطة ووقت وصول الباص المتوقع.
+    </p>
+
+    <div class="notice">
+      تنبيه: المواقع المتحركة والأوقات محاكاة تعليمية،
+      وليست بيانات مباشرة من باصات الجامعة.
+    </div>
+
+    <div class="layout">
+      <section>
+        <div class="card">
+          <div class="location-label">المحطة المختارة</div>
+          <div class="selected-name" id="selectedName">
+            البوابة الأولى
+          </div>
+          <div class="location-label">الباص القادم بعد</div>
+          <div class="eta" id="selectedEta">--:--</div>
+          <button id="locateBtn" type="button">
+            📍 تحديد أقرب محطة لي
+          </button>
+          <div class="location-status" id="locationStatus">
+            يمكنك أيضًا اختيار محطة من القائمة.
+          </div>
+        </div>
+
+        <div class="card stations">
+          <h2>جميع المحطات</h2>
+          <div id="stationList"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>خريطة الباصات المتحركة</h2>
+        <div id="map"></div>
+        <p class="map-note">
+          🚌 ثلاثة باصات تجريبية على مسار دائري.
+          الخطوط تصل بين المحطات للتوضيح فقط،
+          وليست مسارات الشوارع الفعلية.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script>
+    "use strict";
+
+    // مواقع المحطات التي تم تحديدها في Google Earth.
+    const stations = [
+      {
+        name: "البوابة الأولى",
+        lat: 21.576739,
+        lng: 39.181925
+      },
+      {
+        name: "البوابة الثانية",
+        lat: 21.578336,
+        lng: 39.181450
+      },
+      {
+        name: "البوابة الثالثة",
+        lat: 21.579936,
+        lng: 39.180958
+      },
+      {
+        name: "قاعة المؤتمرات",
+        lat: 21.581453,
+        lng: 39.185567
+      },
+      {
+        name: "بوابة 17",
+        lat: 21.586989,
+        lng: 39.182319
+      }
+    ];
+
+    // مدة دورة واحدة 18 دقيقة.
+    // ثلاثة باصات بينها 6 دقائق تقريبًا.
+    const loopSeconds = 18 * 60;
+    const busCount = 3;
+    const startTime = Date.now();
+
+    // زمن وصول الباص إلى كل محطة خلال الدورة.
+    // أزمنة افتراضية متدرجة بحسب ترتيب المحطات.
+    const stopTimes = [0, 180, 360, 600, 840];
+
+    let selectedIndex = 0;
+    let map = null;
+    let busMarkers = [];
+    let stopMarkers = [];
+
+    const selectedName = document.getElementById(
+      "selectedName"
+    );
+
+    const selectedEta = document.getElementById(
+      "selectedEta"
+    );
+
+    const stationList = document.getElementById(
+      "stationList"
+    );
+
+    const locationStatus = document.getElementById(
+      "locationStatus"
+    );
+
+    // حساب موقع كل باص في الدورة.
+    function getBusPhase(busNumber, elapsedSeconds) {
+      const spacing = loopSeconds / busCount;
+      const phase = elapsedSeconds + busNumber * spacing;
+
+      return ((phase % loopSeconds) + loopSeconds)
+        % loopSeconds;
+    }
+
+    // حساب الزمن المتبقي لوصول أقرب باص لمحطة.
+    function getEtaSeconds(stationIndex, elapsedSeconds) {
+      const arrivalPhase = stopTimes[stationIndex];
+      let soonest = loopSeconds;
+
+      for (let bus = 0; bus < busCount; bus++) {
+        const phase = getBusPhase(bus, elapsedSeconds);
+
+        const remaining = (
+          arrivalPhase - phase + loopSeconds
+        ) % loopSeconds;
+
+        soonest = Math.min(soonest, remaining);
+      }
+
+      return soonest;
+    }
+
+    function formatEta(seconds) {
+      const total = Math.max(0, Math.ceil(seconds));
+      const minutes = Math.floor(total / 60);
+      const rest = total % 60;
+
+      return String(minutes).padStart(2, "0")
+        + ":"
+        + String(rest).padStart(2, "0");
+    }
+
+    // إيجاد موقع الباص بين محطتين.
+    function getBusPosition(phase) {
+      for (let i = 0; i < stations.length; i++) {
+        const nextIndex = (i + 1) % stations.length;
+        const fromTime = stopTimes[i];
+        const toTime = nextIndex === 0
+          ? loopSeconds
+          : stopTimes[nextIndex];
+
+        if (phase >= fromTime && phase < toTime) {
+          const fraction = (
+            phase - fromTime
+          ) / (toTime - fromTime);
+
+          const from = stations[i];
+          const to = stations[nextIndex];
+
+          return [
+            from.lat + (to.lat - from.lat) * fraction,
+            from.lng + (to.lng - from.lng) * fraction
+          ];
+        }
+      }
+
+      return [stations[0].lat, stations[0].lng];
+    }
+
+    function selectStation(index) {
+      selectedIndex = index;
+      selectedName.textContent = stations[index].name;
+
+      if (map) {
+        map.panTo([
+          stations[index].lat,
+          stations[index].lng
+        ]);
+      }
+
+      renderTimes();
+    }
+
+    function renderTimes() {
+      const elapsed = (Date.now() - startTime) / 1000;
+      const selectedSeconds = getEtaSeconds(
+        selectedIndex,
+        elapsed
+      );
+
+      selectedEta.textContent = formatEta(selectedSeconds);
+      stationList.replaceChildren();
+
+      stations.forEach((station, index) => {
+        const button = document.createElement("button");
+        const name = document.createElement("span");
+        const time = document.createElement("span");
+
+        button.type = "button";
+        button.className = "station-row";
+
+        if (index === selectedIndex) {
+          button.classList.add("active");
+        }
+
+        name.textContent = station.name;
+        time.className = "station-time";
+        time.textContent = formatEta(
+          getEtaSeconds(index, elapsed)
+        );
+
+        button.append(name, time);
+        button.addEventListener("click", () => {
+          selectStation(index);
+        });
+
+        stationList.appendChild(button);
+      });
+    }
+
+    function initMap() {
+      if (typeof L === "undefined") {
+        document.getElementById("map").textContent =
+          "تعذر تحميل الخريطة. تأكدي من الإنترنت.";
+        return;
+      }
+
+      map = L.map("map").setView(
+        [21.5814, 39.1826],
+        15
+      );
+
+      L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+          maxZoom: 19,
+          attribution: "© OpenStreetMap contributors"
+        }
+      ).addTo(map);
+
+      const route = stations.map((station) => [
+        station.lat,
+        station.lng
+      ]);
+
+      route.push(route[0]);
+
+      L.polyline(route, {
+        color: "#a43b2b",
+        weight: 4,
+        opacity: 0.85,
+        dashArray: "8 7"
+      }).addTo(map);
+
+      stations.forEach((station, index) => {
+        const marker = L.circleMarker(
+          [station.lat, station.lng],
+          {
+            radius: 8,
+            color: "white",
+            weight: 2,
+            fillColor: "#a43b2b",
+            fillOpacity: 1
+          }
+        ).addTo(map);
+
+        marker.bindPopup(station.name);
+        marker.on("click", () => selectStation(index));
+        stopMarkers.push(marker);
+      });
+
+      const busIcon = L.divIcon({
+        className: "",
+        html: '<div class="bus-icon">🚌</div>',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+      });
+
+      for (let bus = 0; bus < busCount; bus++) {
+        const marker = L.marker(route[0], {
+          icon: busIcon
+        }).addTo(map);
+
+        marker.bindPopup("باص تجريبي " + (bus + 1));
+        busMarkers.push(marker);
+      }
+
+      map.fitBounds(route, {
+        padding: [30, 30]
+      });
+
+      setTimeout(() => map.invalidateSize(), 200);
+    }
+
+    function moveBuses() {
+      const elapsed = (Date.now() - startTime) / 1000;
+
+      busMarkers.forEach((marker, bus) => {
+        const phase = getBusPhase(bus, elapsed);
+        marker.setLatLng(getBusPosition(phase));
+      });
+    }
+
+    function distanceSquared(a, b) {
+      const latDiff = a.lat - b.lat;
+      const lngDiff = (
+        a.lng - b.lng
+      ) * Math.cos(a.lat * Math.PI / 180);
+
+      return latDiff * latDiff + lngDiff * lngDiff;
+    }
+
+    function locateNearest() {
+      if (!navigator.geolocation) {
+        locationStatus.textContent =
+          "متصفحك لا يدعم تحديد الموقع.";
+        return;
+      }
+
+      locationStatus.textContent = "جاري تحديد موقعك...";
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const user = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+
+          let nearest = 0;
+          let bestDistance = Infinity;
+
+          stations.forEach((station, index) => {
+            const distance = distanceSquared(user, station);
+
+            if (distance < bestDistance) {
+              bestDistance = distance;
+              nearest = index;
+            }
+          });
+
+          selectStation(nearest);
+          locationStatus.textContent =
+            "تم اختيار أقرب محطة جغرافيًا لموقعك.";
+        },
+        () => {
+          locationStatus.textContent =
+            "تعذر تحديد الموقع. اختاري محطة يدويًا.";
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 12000
+        }
+      );
+    }
+
+    document.getElementById("locateBtn")
+      .addEventListener("click", locateNearest);
+
+    initMap();
+    renderTimes();
+    moveBuses();
+
+    setInterval(() => {
+      renderTimes();
+      moveBuses();
+    }, 1000);
+
+    // يطلب إذن الموقع تلقائيًا فقط في السياق الآمن.
+    if (window.isSecureContext) {
+      locateNearest();
+    }
+  </script>
+</body>
+</html>
