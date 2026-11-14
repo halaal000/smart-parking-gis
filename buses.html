@@ -272,9 +272,7 @@
         <h2>خريطة الباصات المتحركة</h2>
         <div id="map"></div>
         <p class="map-note">
-          🚌 ثلاثة باصات تجريبية على مسار دائري.
-          الخطوط تصل بين المحطات للتوضيح فقط،
-          وليست مسارات الشوارع الفعلية.
+          🚌 ثلاثة باصات تجريبية تمشي على المسار الدائري المحدد.
         </p>
       </section>
     </div>
@@ -305,15 +303,141 @@
         lng: 39.180958
       },
       {
-        name: "قاعة المؤتمرات",
-        lat: 21.581453,
-        lng: 39.185567
-      },
-      {
         name: "بوابة 17",
         lat: 21.586989,
         lng: 39.182319
+      },
+      {
+        name: "قاعة المؤتمرات",
+        lat: 21.581453,
+        lng: 39.185567
       }
+    ];
+
+    // ==========================================================
+    // مسار الباصات (دائري): نقاط [خط العرض، خط الطول] بالترتيب.
+    // الباصات تمشي على هذا المسار بالضبط، ويرجع من آخر نقطة للأولى.
+    // هذا المسار مأخوذ من رسمك في Google Earth.
+    // لتغييره: افتحي الصفحة بالرابط  buses.html?draw=1
+    // وارسمي مسار جديد بالضغط على الخريطة، ثم الصقي النقاط هنا.
+    // ==========================================================
+    const routePath = [
+      [21.581325, 39.186189],
+      [21.581158, 39.186224],
+      [21.580931, 39.186286],
+      [21.580837, 39.186307],
+      [21.580717, 39.186337],
+      [21.580631, 39.186355],
+      [21.580553, 39.186368],
+      [21.580469, 39.186382],
+      [21.580364, 39.1864],
+      [21.580261, 39.186424],
+      [21.580122, 39.186464],
+      [21.580009, 39.186498],
+      [21.579923, 39.186516],
+      [21.579851, 39.186537],
+      [21.579726, 39.186568],
+      [21.579571, 39.18662],
+      [21.579458, 39.186651],
+      [21.579292, 39.186696],
+      [21.579092, 39.186755],
+      [21.578945, 39.186801],
+      [21.57881, 39.186843],
+      [21.578628, 39.186886],
+      [21.57848, 39.186908],
+      [21.578373, 39.186907],
+      [21.57827, 39.186854],
+      [21.578124, 39.18676],
+      [21.577725, 39.186532],
+      [21.577387, 39.18634],
+      [21.577257, 39.186258],
+      [21.577143, 39.186178],
+      [21.577027, 39.186092],
+      [21.576953, 39.186008],
+      [21.576898, 39.185905],
+      [21.576852, 39.185746],
+      [21.576383, 39.184062],
+      [21.576285, 39.183688],
+      [21.576205, 39.183387],
+      [21.576079, 39.182908],
+      [21.576067, 39.18276],
+      [21.576074, 39.182653],
+      [21.576088, 39.18256],
+      [21.576125, 39.182416],
+      [21.576208, 39.182239],
+      [21.576352, 39.181967],
+      [21.576476, 39.18175],
+      [21.576686, 39.181507],
+      [21.576851, 39.181404],
+      [21.577076, 39.181297],
+      [21.577313, 39.181212],
+      [21.57784, 39.181045],
+      [21.579739, 39.18044],
+      [21.580094, 39.180336],
+      [21.580371, 39.180256],
+      [21.580503, 39.180211],
+      [21.580548, 39.180146],
+      [21.580557, 39.180082],
+      [21.580616, 39.180021],
+      [21.580675, 39.179998],
+      [21.580783, 39.18],
+      [21.580844, 39.180037],
+      [21.58095, 39.180063],
+      [21.581119, 39.180017],
+      [21.581514, 39.179899],
+      [21.581716, 39.179867],
+      [21.581873, 39.179875],
+      [21.582054, 39.179913],
+      [21.582229, 39.180022],
+      [21.582314, 39.180109],
+      [21.582402, 39.180216],
+      [21.582458, 39.180312],
+      [21.582501, 39.180406],
+      [21.582538, 39.180533],
+      [21.582575, 39.180673],
+      [21.582739, 39.181313],
+      [21.582883, 39.181884],
+      [21.582929, 39.182044],
+      [21.582966, 39.182171],
+      [21.583002, 39.182318],
+      [21.583061, 39.182501],
+      [21.583102, 39.182579],
+      [21.583171, 39.182647],
+      [21.583258, 39.182697],
+      [21.583352, 39.18276],
+      [21.583422, 39.182808],
+      [21.583533, 39.182778],
+      [21.583788, 39.182703],
+      [21.584153, 39.182592],
+      [21.58465, 39.182435],
+      [21.584906, 39.18236],
+      [21.585088, 39.182314],
+      [21.585141, 39.182377],
+      [21.585119, 39.182466],
+      [21.584024, 39.182801],
+      [21.583856, 39.18285],
+      [21.583665, 39.18291],
+      [21.583493, 39.182981],
+      [21.583416, 39.183061],
+      [21.583363, 39.183139],
+      [21.583327, 39.183266],
+      [21.583307, 39.18333],
+      [21.583314, 39.183433],
+      [21.583355, 39.183595],
+      [21.583418, 39.183828],
+      [21.583596, 39.184523],
+      [21.583615, 39.184679],
+      [21.583606, 39.184834],
+      [21.583585, 39.184956],
+      [21.583563, 39.185044],
+      [21.583508, 39.185173],
+      [21.583434, 39.185299],
+      [21.583332, 39.185447],
+      [21.583204, 39.185558],
+      [21.583082, 39.185649],
+      [21.582934, 39.185721],
+      [21.582719, 39.185782],
+      [21.581513, 39.186154]
     ];
 
     // مدة دورة واحدة 18 دقيقة.
@@ -322,9 +446,72 @@
     const busCount = 3;
     const startTime = Date.now();
 
-    // زمن وصول الباص إلى كل محطة خلال الدورة.
-    // أزمنة افتراضية متدرجة بحسب ترتيب المحطات.
-    const stopTimes = [0, 180, 360, 600, 840];
+    // تجهيز المسار: نقفله ليصير دائري ونحسب أطوال أجزائه.
+    const routeLine = routePath.slice();
+    const firstPt = routeLine[0];
+    const lastPt = routeLine[routeLine.length - 1];
+
+    if (firstPt[0] !== lastPt[0] || firstPt[1] !== lastPt[1]) {
+      routeLine.push(firstPt);
+    }
+
+    const LAT_M = 111320;
+    const LNG_M = 111320 * Math.cos(21.58 * Math.PI / 180);
+
+    function toXY(point) {
+      return [point[1] * LNG_M, point[0] * LAT_M];
+    }
+
+    const segLen = [];
+    const cum = [0];
+
+    for (let i = 0; i < routeLine.length - 1; i++) {
+      const a = toXY(routeLine[i]);
+      const b = toXY(routeLine[i + 1]);
+      const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+
+      segLen.push(len);
+      cum.push(cum[i] + len);
+    }
+
+    const routeLength = cum[cum.length - 1];
+
+    // مسافة المحطة على المسار (أقرب نقطة على الخط).
+    function stationRouteDistance(station) {
+      const p = toXY([station.lat, station.lng]);
+      let bestGap = Infinity;
+      let bestDist = 0;
+
+      for (let i = 0; i < routeLine.length - 1; i++) {
+        const a = toXY(routeLine[i]);
+        const b = toXY(routeLine[i + 1]);
+        const dx = b[0] - a[0];
+        const dy = b[1] - a[1];
+        const len2 = dx * dx + dy * dy;
+        let t = len2
+          ? ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / len2
+          : 0;
+
+        t = Math.max(0, Math.min(1, t));
+
+        const gap = Math.hypot(
+          p[0] - (a[0] + t * dx),
+          p[1] - (a[1] + t * dy)
+        );
+
+        if (gap < bestGap) {
+          bestGap = gap;
+          bestDist = cum[i] + t * segLen[i];
+        }
+      }
+
+      return bestDist;
+    }
+
+    // زمن وصول الباص إلى كل محطة خلال الدورة (بحسب مكانها على المسار).
+    const stopTimes = stations.map((station) =>
+      stationRouteDistance(station) / routeLength * loopSeconds
+    );
 
     let selectedIndex = 0;
     let map = null;
@@ -384,31 +571,27 @@
         + String(rest).padStart(2, "0");
     }
 
-    // إيجاد موقع الباص بين محطتين.
+    // إيجاد موقع الباص على المسار بحسب وقت الدورة.
     function getBusPosition(phase) {
-      for (let i = 0; i < stations.length; i++) {
-        const nextIndex = (i + 1) % stations.length;
-        const fromTime = stopTimes[i];
-        const toTime = nextIndex === 0
-          ? loopSeconds
-          : stopTimes[nextIndex];
+      const dist = phase / loopSeconds * routeLength;
 
-        if (phase >= fromTime && phase < toTime) {
-          const fraction = (
-            phase - fromTime
-          ) / (toTime - fromTime);
+      for (let i = 0; i < segLen.length; i++) {
+        if (dist <= cum[i + 1]) {
+          const fraction = segLen[i]
+            ? (dist - cum[i]) / segLen[i]
+            : 0;
 
-          const from = stations[i];
-          const to = stations[nextIndex];
+          const from = routeLine[i];
+          const to = routeLine[i + 1];
 
           return [
-            from.lat + (to.lat - from.lat) * fraction,
-            from.lng + (to.lng - from.lng) * fraction
+            from[0] + (to[0] - from[0]) * fraction,
+            from[1] + (to[1] - from[1]) * fraction
           ];
         }
       }
 
-      return [stations[0].lat, stations[0].lng];
+      return routeLine[0];
     }
 
     function selectStation(index) {
@@ -482,12 +665,7 @@
         }
       ).addTo(map);
 
-      const route = stations.map((station) => [
-        station.lat,
-        station.lng
-      ]);
-
-      route.push(route[0]);
+      const route = routeLine;
 
       L.polyline(route, {
         color: "#a43b2b",
@@ -534,6 +712,67 @@
       });
 
       setTimeout(() => map.invalidateSize(), 200);
+
+      if (new URLSearchParams(location.search).has("draw")) {
+        enableDrawMode();
+      }
+    }
+
+    // وضع رسم المسار: اضغطي على الخريطة لإضافة نقاط المسار.
+    function enableDrawMode() {
+      const points = [];
+      const preview = L.polyline([], {
+        color: "#f2b453",
+        weight: 4
+      }).addTo(map);
+
+      const panel = document.createElement("div");
+      panel.style.marginTop = "12px";
+      panel.innerHTML =
+        '<div class="hint">وضع الرسم: اضغطي على الخريطة بالترتيب ' +
+        'لتحديد المسار (يرجع تلقائيًا للنقطة الأولى). ' +
+        'ثم انسخي الكود والصقيه مكان routePath.</div>' +
+        '<textarea id="drawOut" readonly rows="8" ' +
+        'style="width:100%;margin-top:8px;direction:ltr;' +
+        'background:#151515;color:#f5f3ef;border:1px solid #484848;' +
+        'border-radius:9px;padding:8px"></textarea>' +
+        '<div style="display:flex;gap:8px;margin-top:8px">' +
+        '<button type="button" id="drawUndo">تراجع عن آخر نقطة</button>' +
+        '<button type="button" id="drawClear">مسح الكل</button></div>';
+
+      document.querySelector(".map-note").after(panel);
+
+      const out = document.getElementById("drawOut");
+
+      function refresh() {
+        preview.setLatLngs(points);
+        out.value = "const routePath = [\n" +
+          points.map((p) => "  [" + p[0] + ", " + p[1] + "]")
+            .join(",\n") +
+          "\n];";
+      }
+
+      map.on("click", (event) => {
+        points.push([
+          Number(event.latlng.lat.toFixed(6)),
+          Number(event.latlng.lng.toFixed(6))
+        ]);
+        refresh();
+      });
+
+      document.getElementById("drawUndo")
+        .addEventListener("click", () => {
+          points.pop();
+          refresh();
+        });
+
+      document.getElementById("drawClear")
+        .addEventListener("click", () => {
+          points.length = 0;
+          refresh();
+        });
+
+      refresh();
     }
 
     function moveBuses() {

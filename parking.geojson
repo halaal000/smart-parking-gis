@@ -1,0 +1,7580 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18046312332509,
+          21.57868491088686,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-001",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/V.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18043477322922,
+          21.57867849569521,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-002",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18040445687405,
+          21.57867195665292,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-003",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18037686817959,
+          21.57865922992806,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-004",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18034975735306,
+          21.57865254996025,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-005",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18031906678535,
+          21.57864262439452,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-006",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18029029856573,
+          21.57864033579019,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-007",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18026127641019,
+          21.57863631726929,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-008",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1802339280819,
+          21.57862628706422,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-009",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18020528987312,
+          21.57862052376001,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G010",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045364193208,
+          21.57863469607951,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-011",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042031842021,
+          21.5786200165918,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-12",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1803931496686,
+          21.5786183121491,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-013",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18036435923812,
+          21.57860912717963,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-014",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18033402618214,
+          21.57860324252365,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-015",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030687889711,
+          21.57859299925236,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-016",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18027707377593,
+          21.57858666907746,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-017",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18025007500281,
+          21.57858043775034,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-018",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18022105662986,
+          21.57856729040512,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-019",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18018873435958,
+          21.57856763152179,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-020",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18016571841265,
+          21.57855545590297,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-021",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18013372940857,
+          21.5785528645116,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-020",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18068751162775,
+          21.57849001588307,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-001",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18068095746703,
+          21.57852030263569,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-002",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18067779538524,
+          21.57854637266402,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-003",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806701510497,
+          21.57857519618164,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-004",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065890706739,
+          21.57859694836984,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-005",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065291795446,
+          21.57863016404714,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-007",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18064275054071,
+          21.5786508143226,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-008",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806377401656,
+          21.57867693492294,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-009",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18052011878826,
+          21.57851637071245,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-021",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18048629117693,
+          21.5785106646631,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-022",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1804572802909,
+          21.5785024357804,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-023",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042930140229,
+          21.57849599749602,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-024",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18040528522372,
+          21.57848653762554,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-025",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18037370652607,
+          21.57847758055771,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-026",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18034405477535,
+          21.57847140780165,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-027",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18031537828593,
+          21.5784630474442,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-028",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18028755504795,
+          21.57845644569009,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-O29",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18026299664462,
+          21.57844855132599,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-030",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18023338735802,
+          21.57843954522958,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-031",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1802034814835,
+          21.57843024402011,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-032",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18017574697717,
+          21.578424942999,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-033",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18053940482896,
+          21.57846293470966,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-034",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18050437350864,
+          21.57845520219787,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-035",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1804767836829,
+          21.57844740820711,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-036",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045006106136,
+          21.57843542441349,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-037",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042385936089,
+          21.57842854836236,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-038",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18039324851941,
+          21.57842184052005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-039",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18036274522352,
+          21.57841715046917,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-040",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18033259097874,
+          21.5784132780487,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-041",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030433634511,
+          21.5784070337791,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-042",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18027652121771,
+          21.57840167706655,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-043",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18024883063596,
+          21.57839133638364,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-044",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18021778675651,
+          21.57838359266627,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-045",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18019128645146,
+          21.5783781058603,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-046",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18054644544224,
+          21.57833298474128,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-047",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051609039524,
+          21.57832518420489,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-048",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18048601075292,
+          21.57831682720995,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-049",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045854326024,
+          21.57831054069394,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-050",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042859337967,
+          21.57830649740613,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-051",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18039771568475,
+          21.5782997759563,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-052",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1803713058564,
+          21.57828901767227,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-053",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18034288354604,
+          21.57828239118579,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-054",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18031568499523,
+          21.57827355310985,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-055",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18028819304914,
+          21.57826785583041,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-056",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18025522767833,
+          21.57826051397215,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-057",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18022826146457,
+          21.57825576924339,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-058",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1805913203296,
+          21.5782814698015,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-058",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18055980786019,
+          21.57827120226888,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-059",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1805300048335,
+          21.57826452093845,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-060",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18050474631357,
+          21.57826072838841,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-061",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18047591109372,
+          21.57825122536966,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-062",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18044684119717,
+          21.57824257621316,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-063",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042134114378,
+          21.57823213447253,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-064",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18038933179503,
+          21.57822294568444,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-065",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18036358276623,
+          21.57821568758757,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-066",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18033602345174,
+          21.57821253170726,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-067",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030709998514,
+          21.57820326610819,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-068",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1802783983871,
+          21.5781952645213,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-069",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18024891851554,
+          21.57819085513506,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-070",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806330282982,
+          21.57815552011628,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-010",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806086699508,
+          21.57814929095136,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-011",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18058891127543,
+          21.57814285483613,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-012",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051724902389,
+          21.57812890495959,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-071",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18049412248255,
+          21.57812403093893,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-072",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18047214879454,
+          21.57811879505537,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-073",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18044689651666,
+          21.57811013067139,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-074",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042188345243,
+          21.57810566440007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-075",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18040129240958,
+          21.57809997585393,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-076",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18033030158465,
+          21.57808444861111,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-013",
+        "styleUrl": "#msn_D",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/D.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030172514165,
+          21.57807707891108,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-014",
+        "styleUrl": "#msn_D",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/D.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.180279620074,
+          21.57807065804792,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-015",
+        "styleUrl": "#msn_D",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/D.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065983734461,
+          21.57808546652068,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-077",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18063849335381,
+          21.57807817590967,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-078",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18061645436364,
+          21.5780704195512,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-79",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18054060559805,
+          21.57805202626496,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-80",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051847913235,
+          21.57804373099537,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-81",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18049593004611,
+          21.57803581011938,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-082",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18047300097035,
+          21.5780330015726,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-O83",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045254681279,
+          21.57802476539602,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-084",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042545705811,
+          21.5780185255169,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-085",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18035753849437,
+          21.57799584668852,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-086",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18033190028426,
+          21.57798888301332,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-87",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030718414268,
+          21.57798532959064,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-88",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18069516221965,
+          21.57795600047306,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-089",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18066552664443,
+          21.57795308446261,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-090",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18064374105766,
+          21.57794796752797,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-091",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18061521373592,
+          21.57794390356382,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-092",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18058974065477,
+          21.57793477746459,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-093",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1805629771503,
+          21.57792927894578,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-094",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18054172239978,
+          21.57792105403018,
+          0
+        ]
+      },
+      "properties": {
+        "name": " G-095",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051510394102,
+          21.57791649980032,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-096",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18049542833418,
+          21.57790899902394,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-097",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18046748641442,
+          21.57790495895685,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-098",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18044240419168,
+          21.57789577984544,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-099",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18042299182069,
+          21.57788835712584,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-100",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1803973343322,
+          21.57787843310935,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-101",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18037126452007,
+          21.57787366365429,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-102",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18034547860479,
+          21.57786835067674,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-103",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18071155936097,
+          21.57789838831413,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-104",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18068557862561,
+          21.57789070042179,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-105",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065989502215,
+          21.57788057725779,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-106",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18063861674587,
+          21.57787591018388,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-107",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18061167892269,
+          21.57786731912433,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-108",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18058654537342,
+          21.57786107954867,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-109",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18056137075509,
+          21.57785389642368,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-110",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18053795071354,
+          21.57784747675292,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-111",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051354735974,
+          21.57784016776074,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-112",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18048926073127,
+          21.57783308485123,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-113",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18046777713791,
+          21.577829161748,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-114",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18044074776564,
+          21.57782178707621,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-115",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1804153103132,
+          21.57781601678536,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-116",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18039191056654,
+          21.57781140168367,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-117",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18036386183065,
+          21.57780406152921,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-118",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18008922402929,
+          21.57817102213198,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-119",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18009647924773,
+          21.57814795362713,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-120",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18010574420526,
+          21.57812141900391,
+          0
+        ]
+      },
+      "properties": {
+        "name": "121",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18011442410967,
+          21.57809524690634,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-122",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18012429077555,
+          21.57806509471188,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-123",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18013242341849,
+          21.57803974961358,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-124",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18014009369787,
+          21.57801253533118,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-125",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18014759709347,
+          21.57798829150293,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-126",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18015548015537,
+          21.57795910798671,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-127",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18016465098503,
+          21.57793150555601,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-128",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1801717696348,
+          21.57790193208602,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-129",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18017804556158,
+          21.57787742017171,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-130",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18018667004232,
+          21.57784828033517,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-131",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18019376722323,
+          21.57782696319945,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-132",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18020482471715,
+          21.57779618729023,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-133",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18074831701102,
+          21.57777598374636,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-134",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18071611164579,
+          21.57776709028214,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-135",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18068527889143,
+          21.5777613617771,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-136",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065490057813,
+          21.57775066479688,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-137",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18062683276234,
+          21.5777423163568,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-138",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18060314422812,
+          21.57773546619723,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-139",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18057395111774,
+          21.57772952539714,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-140",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18054441429483,
+          21.57772240557462,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-142",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051737126771,
+          21.57771646966262,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-143",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18048704163636,
+          21.57770763955427,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-144",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045761932673,
+          21.57770000910346,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-145",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18043177466412,
+          21.57769260226752,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-146",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18040314265332,
+          21.57768065858717,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-147",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18076571960469,
+          21.57772146197338,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-148",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18073094594453,
+          21.577712017471,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-149",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18070149739242,
+          21.57769850761957,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-150",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18067858029644,
+          21.577692931177,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-151",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18064923752075,
+          21.57768570806263,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-152",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18062112060253,
+          21.57767991165589,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-153",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18059704826097,
+          21.57766977890706,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-154",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18056298085889,
+          21.57765883476237,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-155",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18053588883287,
+          21.57765104737239,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-156",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18050873908022,
+          21.57764646715759,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-157",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18047878453044,
+          21.57764057095806,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-158",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1804529177134,
+          21.57763236429281,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-159",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18041856269211,
+          21.57762810813693,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-160",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18079891299802,
+          21.57759416391475,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-161",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18077068479826,
+          21.57758897226731,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-162",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18074241156813,
+          21.57758111702402,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-163",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18071632517412,
+          21.577574977458,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-164",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806858277078,
+          21.57756840959064,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-165",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065353691241,
+          21.57756021023497,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-166",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18062494185135,
+          21.57755330465183,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-167",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18059818117496,
+          21.57754424884339,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-168",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18057047249828,
+          21.57753592571207,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-169",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18054036378228,
+          21.57752559967533,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-170",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18051275745871,
+          21.57751814924553,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-171",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18048466030226,
+          21.57751079007435,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-172",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18045776452595,
+          21.57750558422137,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-173",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18081357704212,
+          21.57754132399769,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-174",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18079054395488,
+          21.57753560552638,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-175",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1807600398761,
+          21.57752691928446,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-176",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18073260029395,
+          21.5775162605317,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-177",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18070257017184,
+          21.57751122771377,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-178",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1806757147492,
+          21.57750110106071,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-179",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18065260865462,
+          21.57749609280939,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-180",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18061894707328,
+          21.57748821315026,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-181",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18059089482232,
+          21.57748040456434,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-182",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18056093615947,
+          21.57747342194254,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-183",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18053217181708,
+          21.57746848349279,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-184",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18050656140836,
+          21.57746309770073,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-185",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1804719371974,
+          21.57745486866863,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-186",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18026423426991,
+          21.57760956564318,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-187",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18027110964383,
+          21.57758615345735,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-188",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1802804658311,
+          21.57755881805569,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-189",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18028761534716,
+          21.57752905548775,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-190",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1802952015102,
+          21.57750445090281,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-191",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18029992775983,
+          21.57747516013388,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-192",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18030891566373,
+          21.57744406607974,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-193",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18089210578997,
+          21.57782168829833,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-194",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18090224548079,
+          21.57779476744298,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-195",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18090859580356,
+          21.57776878161698,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-196",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18091611950906,
+          21.57774051481425,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-197",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18092459885163,
+          21.57771569260334,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-198",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18093075384382,
+          21.57769557764582,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-199",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1809411869522,
+          21.57766373423442,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-200",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18095071623745,
+          21.57763135911336,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-201",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18095671905882,
+          21.57761554350399,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-202",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18096681796367,
+          21.57759324702671,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-203",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+  {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.183310596177,
+          21.5842111536745,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-001",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18328126174937,
+          21.58420311204182,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-002",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18325134253863,
+          21.58419637941045,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-003",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18322728789942,
+          21.58418863409131,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-004",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18319698878898,
+          21.58418046671015,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-005",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18317168705256,
+          21.58417371684722,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-006",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18314736072163,
+          21.58416677106828,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-007",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18311571346246,
+          21.58415812187862,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-008",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18309336173129,
+          21.58415219908845,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-009",
+        "styleUrl": "#msn_G",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18306332276917,
+          21.58414435023231,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-001",
+        "styleUrl": "#msn_D",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/D.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18305030559365,
+          21.58426251195718,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-015",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1831844438645,
+          21.58430137750257,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-010",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18316049750103,
+          21.5842937629255,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-011",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18313903051528,
+          21.58428816173623,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-012",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18310419098476,
+          21.58427794529294,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-013",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18307608513769,
+          21.58426999070513,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-014",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18302380423228,
+          21.58425500580644,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-016",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18316788101045,
+          21.58435847303178,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-017",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18313932097951,
+          21.5843507331005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-018",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18311296394722,
+          21.58434280533811,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-019",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18308819119669,
+          21.58433600742151,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-020",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18306035985026,
+          21.58432798218448,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-021",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18303569690709,
+          21.58432129819738,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-022",
+        "styleUrl": "#msn_G1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18301298551107,
+          21.58431532821032,
+          0
+        ]
+      },
+      "properties": {
+        "name": "D-002",
+        "styleUrl": "#msn_D0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/D.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18313700560172,
+          21.58448030323644,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-023",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18310379413636,
+          21.5844708992925,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-024",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18307231987339,
+          21.58446198494824,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-025",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18304748258347,
+          21.58445418394745,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-026",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18301894357715,
+          21.58444584655063,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-027",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18299240472469,
+          21.58443808591384,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-028",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18296621460666,
+          21.58443016970716,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-029",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18311457377123,
+          21.58453783606972,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-030",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18308566710539,
+          21.58452913485593,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-031",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18306517532972,
+          21.5845231854858,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-032",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18303245601584,
+          21.58451352353986,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-033",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18300603946953,
+          21.58450499464951,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-034",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18297789142853,
+          21.58449642647014,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-035",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1829495064791,
+          21.5844877469344,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-036",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18307678634386,
+          21.58465027739479,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-037",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18305005762049,
+          21.58464293608999,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-038",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18302329110465,
+          21.58463569204658,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-039",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18299496825117,
+          21.58462810028065,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-040",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18296831725943,
+          21.58462033413,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-041",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18294176882282,
+          21.58461365769393,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-042",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18291422091297,
+          21.58460579937394,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-043",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18305907108636,
+          21.58470970451953,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-044",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18303508152187,
+          21.58470258454208,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-045",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18300625133639,
+          21.58469448980298,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-046",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1829784132719,
+          21.58468650942348,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-047",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18295212187034,
+          21.58467862601473,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-048",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18292443063552,
+          21.58467138644271,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-049",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18289616641994,
+          21.58466297233003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-050",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18311321578669,
+          21.5848457489702,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-051",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1830826254082,
+          21.58483699295792,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-052",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18305420284563,
+          21.58483039665409,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-053",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18302388473415,
+          21.58482238135009,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-054",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18299664429637,
+          21.58481519184654,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-055",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18296737160711,
+          21.58480827150956,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-056",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18293948535283,
+          21.58480154323438,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-057",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18291262145796,
+          21.5847942837792,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-058",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18288698783811,
+          21.5847873331481,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-059",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18285394582385,
+          21.58477851338078,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-060",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18333648530608,
+          21.58427046139108,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-061",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18332761949997,
+          21.58429676532629,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-062",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18332023986153,
+          21.5843237854841,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-063",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18331033458781,
+          21.58435401206945,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-064",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1833020945478,
+          21.58438107288207,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-065",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18329544608959,
+          21.58440513195058,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-066",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18328761461337,
+          21.58443193478565,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-067",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18327706844063,
+          21.58446108783789,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-068",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18327047528661,
+          21.58448626825846,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-069",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18326321283293,
+          21.58450880738634,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-070",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18325597051739,
+          21.58453726350747,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-071",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18324832500117,
+          21.58456421645552,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-072",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18323925960983,
+          21.58459160210801,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-073",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18323133929054,
+          21.58462031383845,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-074",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18322163433677,
+          21.58464842053196,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-075",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18321495300459,
+          21.58467508805303,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-076",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18320829561603,
+          21.58469609835923,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-077",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18320013624992,
+          21.58472667749421,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-078",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1831915785829,
+          21.58475597052648,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-079",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18318368358686,
+          21.58477995519992,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-080",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18317584362418,
+          21.58480672750156,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-081",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.18316810219239,
+          21.58483327794183,
+          0
+        ]
+      },
+      "properties": {
+        "name": "G-082",
+        "styleUrl": "#msn_G0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/G.png"
+      }
+    }
+  ]
+}

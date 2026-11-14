@@ -257,7 +257,7 @@ button:disabled {
 }
 
 #map {
-  height: 510px;
+  height: 650px;
   width: 100%;
   border-radius: 13px;
   background: #333;
@@ -308,8 +308,8 @@ button:disabled {
 }
 
 .spot-icon {
-  height: 29px;
-  width: 29px;
+  height: 19px;
+  width: 19px;
   border: 2px solid #fff;
   border-radius: 8px;
   display: flex;
@@ -505,7 +505,7 @@ button:disabled {
 
 }
 
-@media (max-width:500px) {
+@media (max-width:550px) {
   .container {
     padding: 12px;
   }
@@ -823,29 +823,121 @@ button:disabled {
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
-  <script>
+ 
+<script
+  src="https://unpkg.com/@tomickigrzegorz/leaflet-rotate/dist/leaflet-rotate.umd.min.js">
+</script>
+ 
+ <script>
    "use strict";
 const CAMPUS = [21.5814550, 39.1829384], REFRESH_SECONDS = 15;
 let spots = [], userLocation = null, userMarker = null, nearestSpot = null;
-const map = L.map("map").setView(CAMPUS, 19);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap contributors", maxZoom: 19 }).addTo(map);
+const map = L.map("map", {
+center: CAMPUS,
+zoom: 18,
+
+rotate: true,
+bearing: 286,
+
+dragRotate: false,
+touchRotate: false,
+shiftKeyRotate: false,
+rotateControl: false
+});
 const spotLayer = L.layerGroup().addTo(map);
+const parkingZonesLayer = L.geoJSON(null, {
+    style: {
+        color: "#00BFFF",
+        weight: 3,
+        fillColor: "#00BFFF",
+        fillOpacity: 0.08
+    },
+    onEachFeature: (feature, layer) => {
+        layer.bindPopup(
+            feature.properties?.name || "Parking Zone"
+        );
+    }
+}).addTo(map);
+const campusBoundary = [
+    [21.575639, 39.188833],
+    [21.573339, 39.180822],
+    [21.584397, 39.177275],
+    [21.586733, 39.186275]
+];
+
+const campusBounds = L.latLngBounds(
+    campusBoundary
+);
+
+
+
+map.setMinZoom(
+    map.getBoundsZoom(campusBounds)
+);
+
+map.setMaxBounds(campusBounds);
+
+map.setView(
+    campusBounds.getCenter(),
+    17,
+    {
+        animate: false
+    }
+);
+
+map.options.maxBoundsViscosity = 1.0;
+
+L.polygon(campusBoundary, {
+    color: "#00BFFF",
+    weight: 3,
+    fillColor: "#00BFFF",
+    fillOpacity: 0.05
+}).addTo(map);
+
+const outsideArea = [
+[
+[-90, -180],
+[-90, 180],
+[90, 180],
+[90, -180]
+],
+
+[...campusBoundary].reverse()
+];
+
+const outsideMask = L.polygon(
+outsideArea,
+{
+stroke: false,
+fillColor: "#242424",
+fillOpacity: 1,
+fillRule: "evenodd",
+interactive: false
+}
+).addTo(map);
+
+L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+        attribution: "© OpenStreetMap contributors",
+        maxZoom: 22,
+        maxNativeZoom:19
+    }
+).addTo(map);
+
 const el = id => document.getElementById(id);
 function isValidCoords(c) { return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]) && Math.abs(c[0]) <= 90 && Math.abs(c[1]) <= 180; }
+
 function createDemoSpots() {
-    const arr = [];
-    for (let r = 0; r < 10; r++)
-        for (let c = 0; c < 12; c++) {
-            const i = r * 12 + c;
-            const category = i % 20 === 0 ? "accessible" : i % 5 === 0 ? "staff" : "general";
-            arr.push({ id: `P-${i + 1}`, coords: [CAMPUS[0] + (r - 4.5) * .000095, CAMPUS[1] + (c - 5.5) * .000095], category, status: Math.random() > .42 ? "available" : "occupied", marker: null });
-        }
-    return arr;
+    return [];
 }
+
+
+
 async function createSpots() {
     let fromGeojson = false;
     try {
-        const response = await fetch("parking_spots.geojson");
+        const response = await fetch("./parking.geojson");
         if (!response.ok)
             throw Error("GeoJSON not found");
         const data = await response.json();
@@ -854,7 +946,22 @@ async function createSpots() {
         const valid = data.features.filter(f => f.geometry?.type === "Point" && isValidCoords([f.geometry.coordinates[1], f.geometry.coordinates[0]]));
         if (!valid.length)
             throw Error("No valid coordinates");
-        spots = valid.map((f, i) => ({ id: String(f.properties?.spot_ID ?? f.properties?.spot_id ?? `P-${i + 1}`), coords: [f.geometry.coordinates[1], f.geometry.coordinates[0]], category: (() => { const t = String(f.properties?.category ?? f.properties?.type ?? "").toLowerCase(); return /accessible|disabled|ذوي|اعاقة|إعاقة/.test(t) ? "accessible" : /staff|faculty|employee|منسوب|دكتور/.test(t) ? "staff" : "general"; })(), status: f.properties?.status === "occupied" ? "occupied" : "available", marker: null }));
+        spots = valid.map((f, i) => ({ id: String(f.properties?.spot_ID ?? f.properties?.spot_id ?? `P-${i + 1}`), coords: [f.geometry.coordinates[1], f.geometry.coordinates[0]], 
+        
+        category: (() => {
+const name = String(
+f.properties?.name ?? ""
+).toUpperCase();
+
+if (name.startsWith("D-"))
+    return "accessible";
+
+if (name.startsWith("G-"))
+    return "general";
+
+return "general";
+})(),
+          status: f.properties?.status === "occupied" ? "occupied" : "available", marker: null }));
         fromGeojson = true;
     }
     catch (e) {
@@ -879,8 +986,24 @@ const nearest =
 
         const categoryClass = spot.category === "staff" ? "staff" : spot.category === "accessible" ? "accessible" : spot.status;
         const symbol = spot.category === "staff" ? "S" : spot.category === "accessible" ? "♿" : spot.status === "available" ? "P" : "×";
-        const icon = L.divIcon({ className: "spot-marker", html: `<div class="spot-icon ${nearest ? "nearest" : categoryClass}">${symbol}</div>`, iconSize: [29, 29], iconAnchor: [14, 14] });
-        spot.marker = L.marker(spot.coords, { icon }).addTo(spotLayer);
+       
+   
+const icon = L.divIcon({
+    className: "spot-marker",
+    html:
+        '<div class="spot-icon ' +
+        (nearest ? "nearest" : categoryClass) +
+        '">' + symbol + '</div>',
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
+});
+
+spot.marker = L.marker(
+    spot.coords,
+    { icon: icon }
+).addTo(spotLayer);
+
+
         const node = document.createElement("div");
         const strong = document.createElement("strong");
         strong.textContent = `Parking ${spot.id}`;
@@ -986,6 +1109,114 @@ document.addEventListener("keydown", (event) => {
         closeTeamModal();
     }
 });
+
+fetch("./parking_zones.geojson")
+.then(response => {
+if (!response.ok) {
+throw new Error("Zones file not found");
+}
+return response.json();
+})
+.then(data => {
+parkingZonesLayer.addData(data);
+
+    console.log("Loaded zones:", data.features.length);
+
+    // حساب المسافة إلى حدود كل منطقة
+    function distanceToZone(position, layer) {
+        const point = map.project(position, 18);
+        const rings = layer.getLatLngs();
+        const corners = rings[0];
+
+        let shortest = Infinity;
+
+        for (let i = 0; i < corners.length; i++) {
+            const a = map.project(corners[i], 18);
+            const b = map.project(
+                corners[(i + 1) % corners.length], 18
+            );
+
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+
+            const length2 = dx * dx + dy * dy;
+
+            const t = length2 === 0 ? 0 :
+                Math.max(0, Math.min(1,
+                    ((point.x - a.x) * dx +
+                     (point.y - a.y) * dy) / length2
+                ));
+
+            const x = a.x + t * dx;
+            const y = a.y + t * dy;
+
+            const distance = Math.hypot(
+                point.x - x,
+                point.y - y
+            );
+
+            shortest = Math.min(shortest, distance);
+        }
+
+        return shortest;
+    }
+
+    // طلب الموقع عند فتح الصفحة
+    if (!navigator.geolocation) return;
+
+    navigator.geolocation.getCurrentPosition(
+        position => {
+            const location = L.latLng(
+                position.coords.latitude,
+                position.coords.longitude
+            );
+
+            let closestZone = null;
+            let shortestDistance = Infinity;
+
+            parkingZonesLayer.eachLayer(layer => {
+                const distance = distanceToZone(
+                    location, layer
+                );
+
+                if (distance < shortestDistance) {
+                    shortestDistance = distance;
+                    closestZone = layer;
+                }
+            });
+
+            if (closestZone) {
+                map.fitBounds(
+                    closestZone.getBounds(),
+                    {
+                        padding: [35, 35],
+                        maxZoom: 19,
+                        animate: true
+                    }
+                );
+
+                closestZone.openPopup();
+            }
+        },
+        error => {
+            console.log(
+                "Location unavailable:",
+                error.message
+            );
+        },
+        {
+            enableHighAccuracy: true,
+            timeout: 12000
+        }
+    );
+})
+.catch(error => {
+    console.error("Parking zones error:", error);
+});
+    
+setTimeout(() => {
+    map.setView([21.5785, 39.1805], 19);
+}, 2000);
 
 createSpots();
   </script>
